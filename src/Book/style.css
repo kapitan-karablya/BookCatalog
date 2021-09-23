@@ -4,11 +4,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
     border: solid 1px lightgray;
     border-radius: 5px;
     margin: 5px;
     padding: 20px 10px;
     box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
 }
 
 .book:hover {
@@ -32,11 +35,16 @@
 }
 
 .book-author {
+    width: 100%;
     margin-top: 0;
     color: gray;
+    max-height: 22px;
+    overflow: hidden;
 }
 .hide-book-buttons {
     display: none;
+    position: absolute;
+    bottom: 10px;
 }
 
 .book:hover .hide-book-buttons{
@@ -51,6 +59,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
 }
 
 .book-edit-button {
