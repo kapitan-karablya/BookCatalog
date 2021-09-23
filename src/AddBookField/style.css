@@ -1,5 +1,7 @@
 .add-book-field {
     border-right: solid 1px lavender;
+    position: fixed;
+    padding: 0 20px;
 }
 
 .add-book-title {

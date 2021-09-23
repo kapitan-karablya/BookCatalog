@@ -1,5 +1,10 @@
 .book-list {
-    margin: 20px;
+    margin: 20px 20px 20px 380px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.empty_list {
+    font-size: 35px;
+    color: gray;
 }
