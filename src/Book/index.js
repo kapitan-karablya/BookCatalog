@@ -4,8 +4,7 @@ import {useState} from "react";
 import no_cover from "../no_cover.jpeg"
 
 function Book(props) {
-
-    const [book] = useState( JSON.parse(localStorage.getItem(props.id)));
+    let [book] = useState( JSON.parse(localStorage.getItem(props.id)));
 
     const deleteBook = () => {
         localStorage.removeItem(props.id);
@@ -24,7 +23,7 @@ function Book(props) {
                 <p className="book-author">{book.author === '' ? 'Автор неизвестен' : book.author}</p>
             </div>
             <div className="hide-book-buttons">
-                <button className="book-button book-edit-button">Изменить</button>
+                <button className="book-button book-edit-button" onClick={() => props.clickEditButton(props.id)}>Изменить</button>
                 <button className="book-button book-delete-button" onClick={deleteBook}>Удалить</button>
             </div>
         </div>

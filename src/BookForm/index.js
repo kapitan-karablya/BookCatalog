@@ -3,9 +3,10 @@ import React, {useState} from "react";
 
 
 function BookForm(props) {
-    const [inputValues, setInputValues] = useState({
-        title: '', author: '', cover: ''
-    });
+
+    const [inputValues, setInputValues] = useState(
+        props.bookId ? JSON.parse(localStorage.getItem(props.bookId)) : {
+            title: '', author: '', cover: ''});
 
     const handleOnChange = event => {
         const {name, value} = event.target;
@@ -14,16 +15,21 @@ function BookForm(props) {
 
     const handleSubmit = event => {
         event.preventDefault();
-        let lastId = localStorage.getItem('lastId');
-        let newId = lastId === null ? 1 : parseInt(lastId) + 1;
-        localStorage.setItem('lastId', newId);
-        localStorage.setItem(newId, JSON.stringify(inputValues));
-        props.update();
+        let bookId;
+        if (!props.bookId) {
+            let lastId = localStorage.getItem('lastId');
+            bookId = lastId === null ? 1 : parseInt(lastId) + 1;
+            localStorage.setItem('lastId', bookId);
+        }
+        else
+            bookId = props.bookId;
+        localStorage.setItem(bookId, JSON.stringify(inputValues));
         setInputValues({
             title: '', author: '', cover: ''
         });
         const file = document.querySelector('.book-form-picture');
         file.value = '';
+        props.update();
     };
 
     function getBase64(file) {
@@ -39,7 +45,6 @@ function BookForm(props) {
         let file = event.target.files[0];
         if (file === undefined)
             return;
-        console.log(file);
         const name = event.target.name;
         getBase64(file).then(
             data => setInputValues({...inputValues, [name]: data})

@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1082e244-67bd-4951-9b54-7aa55b6a12ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/no_cover.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modal/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modal/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddBookField/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddBookField/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddBookField/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddBookField/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Book/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BookForm/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookForm/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BookList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookList/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookList/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +28,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Modal" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -46,6 +42,7 @@
       <recent name="C:\Users\19van\WebstormProjects\book-catalog_test-task\BookCatalog_test-task\public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\19van\WebstormProjects\book-catalog_test-task\BookCatalog_test-task\src\Modal" />
       <recent name="C:\Users\19van\WebstormProjects\book-catalog_test-task\BookCatalog_test-task\src\Main" />
       <recent name="C:\Users\19van\WebstormProjects\book-catalog_test-task\src" />
     </key>
@@ -89,8 +86,16 @@
       <updated>1632386723910</updated>
       <workItem from="1632386725000" duration="1062000" />
       <workItem from="1632387970019" duration="1793000" />
-      <workItem from="1632393013503" duration="10859000" />
+      <workItem from="1632393013503" duration="18836000" />
     </task>
+    <task id="LOCAL-00001" summary="Сделал добавление/удаление через localStorage">
+      <created>1632404098885</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632404098885</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,5 +119,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="Сделал добавление/удаление через localStorage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал добавление/удаление через localStorage" />
   </component>
 </project>

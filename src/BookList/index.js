@@ -7,7 +7,7 @@ function BookList(props) {
     return (
         <div className="book-list">
             {Object.keys(props.books).slice(0).reverse().map(bookId => (
-                <Book key={bookId} id={bookId} update={props.update}/>
+                <Book key={bookId} id={bookId} update={props.update} clickEditButton={props.clickEditButton}/>
             ))}
         </div>
     );
