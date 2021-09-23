@@ -1,3 +1,5 @@
 .book-list {
     margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }

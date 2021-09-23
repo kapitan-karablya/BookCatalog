@@ -1,0 +1,7 @@
+.App-main {
+    display: grid;
+    grid-template-columns: 300px auto;
+    margin-top: 80px;
+    padding: 50px 20px;
+    font-family: 'Roboto', sans-serif;
+}
